@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Gate Pass System</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Campus Gate Pass System</h1>
+            <p class="subtitle">Streamlined permission management for campus exits</p>
+        </header>
+
+        <main class="main-content">
+            <div class="role-selection">
+                <div class="role-card" onclick="navigateTo('student.html')">
+                    <div class="role-icon">🎓</div>
+                    <h2>Student</h2>
+                    <p>Request gate pass and track status</p>
+                </div>
+
+                <div class="role-card" onclick="navigateTo('moderator.html')">
+                    <div class="role-icon">👨‍💼</div>
+                    <h2>Moderator</h2>
+                    <p>Review and approve/reject requests</p>
+                </div>
+
+                <div class="role-card" onclick="navigateTo('gatekeeper.html')">
+                    <div class="role-icon">🛡️</div>
+                    <h2>Gatekeeper</h2>
+                    <p>Verify and scan gate passes</p>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>© 2025 Campus Gate Pass System</p>
+        </footer>
+    </div>
+
+    <script>
+        function navigateTo(page) {
+            window.location.href = page;
+        }
+    </script>
+</body>
+</html>

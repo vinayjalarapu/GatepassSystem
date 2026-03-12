@@ -1,0 +1,75 @@
+{
+  "students": [
+    {
+      "id": "STU001",
+      "name": "Rahul Kumar",
+      "email": "rahul@college.edu",
+      "phone": "9876543210"
+    }
+  ],
+  "moderators": [
+    {
+      "id": "MOD001",
+      "name": "Dr. Sharma",
+      "email": "sharma@college.edu"
+    }
+  ],
+  "gatekeepers": [
+    {
+      "id": "GK001",
+      "name": "Security Guard",
+      "email": "security@college.edu"
+    }
+  ],
+  "requests": [
+    {
+      "id": "REQ1761372637273AWI3Z",
+      "studentId": "STU001",
+      "studentName": "Rahul Kumar",
+      "reason": "Medical appointment at nearby hospital",
+      "exitDate": "2025-10-26",
+      "exitTime": "14:00",
+      "returnDate": "2025-10-26",
+      "returnTime": "18:00",
+      "status": "approved",
+      "submittedAt": "2025-10-25T06:10:37.273Z",
+      "moderatorRemarks": "Approved",
+      "approvedAt": "2025-10-25T06:33:45.500Z",
+      "qrCode": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIQAAACECAYAAABRRIOnAAAAAklEQVR4AewaftIAAAOKSURBVO3BQY7kSAIDQWdA//+ybx/mwJMAQZm1NT00i38w84/DTDnMlMNMOcyUw0w5zJTDTDnMlMNMOcyUw0w5zJTDTDnMlMNMuXgpCT9J5ZuS8ITKnST8JJU3DjPlMFMOM+Xiw1Q+KQlvJOGbktBU7qh8UhI+6TBTDjPlMFMuviwJT6g8kYSm0lRaEp5QaUloKm8k4QmVbzrMlMNMOcyUi79MEppKU3kiCf8lh5lymCmHmXLxl1FpSXhCpam0JLQkNJV/s8NMOcyUw0y5+DKV30zlCZVPUvlNDjPlMFMOM+Xiw5Lwm6m0JDSVloSm0pLQVO4k4Tc7zJTDTDnMlIuXVH6TJDyh8k0q/yaHmXKYKYeZEv/ghSQ0lZaET1J5IglNpSWhqXxSEj5J5ZsOM+UwUw4z5eIllZaEptKS0FRaEppKS8I3JeEJlZaEpvJNSWgqbxxmymGmHGZK/IMXknBHpSXhDZVvSsITKneS8IbKTzrMlMNMOcyUi5dU7iThjkpLQlN5IglNpSWhqdxRaUl4QqUloam0JPw/HWbKYaYcZsrFS0loKk3lThKaSkvCEyotCU2lJaGptCQ0lZaEptKS8ElJuKPyxmGmHGbKYaZcfFgSmsodlTsqd5LwhsodlZaEpvJGEppKS8JPOsyUw0w5zJSLD1O5k4SmcicJTeWNJNxReSIJTeWOSkvCHZWWhKbySYeZcpgph5ly8WVJaCpPqLQkNJU3VO4koak8odKScCcJTaWptCQ0lTcOM+UwUw4z5eLLVFoS7qi0JDSVloRvUrmThG9Kwh2VTzrMlMNMOcyUi5dUnlB5QuWTVFoSnlC5o/JEEppKS0JTaUloKm8cZsphphxmysVLSfhJKk3lThLuqLQk3EnCE0loKneS0FRaEprKJx1mymGmHGbKxYepfFIS7iThjsqdJNxRuZOEOyrflISm8sZhphxmymGmXHxZEp5QeUPlDZWWhCeS8E0qLQmfdJgph5lymCkX/3Eqd1RaEu6o3ElCU2lJaEloKt90mCmHmXKYKRd/mSS8oXJH5U4S7qg8ofKTDjPlMFMOM+Xiy1S+SeVOEu6o3EnCGypvJKGpNJVPOsyUw0w5zJSLD0vCT0rCN6m0JDSVJ5LQVJrKE0loKm8cZsphphxmSvyDmX8cZsphphxmymGmHGbKYaYcZsphphxmymGmHGbKYaYcZsphphxmyv8AvUel6m7wm/0AAAAASUVORK5CYII="
+    },
+    {
+      "id": "REQ17613740356320BF4G",
+      "studentId": "STU002",
+      "studentName": "Priya Sharma",
+      "reason": "Going home",
+      "exitDate": "2025-10-27",
+      "exitTime": "16:00",
+      "returnDate": "2025-10-28",
+      "returnTime": "09:00",
+      "status": "rejected",
+      "submittedAt": "2025-10-25T06:33:55.632Z",
+      "moderatorRemarks": "Insufficient reason provided. Please resubmit with proper documentation.",
+      "approvedAt": "2025-10-25T06:34:41.865Z",
+      "qrCode": ""
+    },
+    {
+      "id": "REQ1761377957040RCPVI",
+      "studentId": "STU012",
+      "studentName": "vijay",
+      "reason": "emergency",
+      "exitDate": "2025-10-25",
+      "exitTime": "13:00",
+      "returnDate": "2025-10-25",
+      "returnTime": "14:00",
+      "status": "approved",
+      "submittedAt": "2025-10-25T07:39:17.040Z",
+      "moderatorRemarks": "approve him",
+      "approvedAt": "2025-10-25T07:39:59.129Z",
+      "qrCode": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIQAAACECAYAAABRRIOnAAAAAklEQVR4AewaftIAAAO1SURBVO3BQa5bRwADQfZA979yx4ssuBrgQdK3nbAKf8nMv05myslMOZkpJzPlZKaczJSTmXIyU05myslMOZkpJzPlZKaczJSTmfLKm4D8JDVPALlR04A0NTdAmpoG5CepecfJTDmZKScz5ZUPU/NJQG6ANDXvUNOAfJKaTwLySScz5WSmnMyUV74MyBNqnlDzSUBu1DQg7wDyhJpvOpkpJzPlZKa88j+jpgF5AkhT819yMlNOZsrJTHnlLwekqWlqGpAbNQ1IU/NfdjJTTmbKyUx55cvUfJOaBuRGTQPSgDQ136TmT3IyU05myslMeeXDgPwkIE1NA/KEmgakqWlAmpobIH+yk5lyMlNOZgr+kv8RIO9Q04A0NX+zk5lyMlNOZsorbwLS1DQgTU0D0tQ0IE3NJ6m5AdKAfBKQpuYGSFPzSScz5WSmnMyUV96k5kZNA9LUNCBNzRNAmppvUtOANDUNSFPzJzmZKScz5WSmvPImIDdqboDcAGlqGpAn1DQgN2pugDQ1DUhT04A0NQ1IU/NNJzPlZKaczJRX3qSmAblR04DcqGlAvknNDZCmpgG5AdLUNCBNTQNyo+YdJzPlZKaczJRX3gSkqWlAbtTcAHlCzTepuVHTgDQ1DUhT04D8pJOZcjJTTmbKK29S04A0NQ3IDZCmpgFpam6APAGkqWlAmpoGpKn5JDXfdDJTTmbKyUzBX/IGIE1NA/KT1NwAuVHTgDyhpgFpam6APKHmk05myslMOZkpr7xJTQPS1DQgTc07gDQgN2oakAbkCTUNyBNAbtQ0IN90MlNOZsrJTHnlTUCamgbkHUCeUHMDpKm5AXID5AkgN2p+p5OZcjJTTmbKK29Sc6PmHWpugDQgv5OaJ4DcAPlJJzPlZKaczJRX3gTkJ6lpam6ANDU3QJqaGyA3QJqaP9nJTDmZKScz5ZUPU/NJQJ4A0tQ0IE1NU3MD5Ak1TwBpan7SyUw5mSknM+WVLwPyhJongDQ1N2oakKbmRk0D0oC8Q00D0tQ0IE3NO05myslMOZkpr/zl1DQg7wDS1NyouQHyBJAbIE3NJ53MlJOZcjJTXvnLAWlqboDcqGlAmppvUtOANDUNSFPzjpOZcjJTTmbKK1+m5pvU3ABpahqQBuQJIE3NE2oakBsg33QyU05myslMeeXDgPwkIDdqGpCm5gbIjZqfpKYB+aSTmXIyU05mCv6SmX+dzJSTmXIyU05myslMOZkpJzPlZKaczJSTmXIyU05myslMOZkpJzPlH1VYozt7iUiuAAAAAElFTkSuQmCC"
+    }
+  ],
+  "usedPasses": [
+    "REQ1761372637273AWI3Z",
+    "REQ1761377957040RCPVI"
+  ]
+}

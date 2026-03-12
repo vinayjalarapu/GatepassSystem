@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal - Gate Pass System</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+  
+</head>
+<body>
+    <div class="container">
+        <div class="back-btn">
+            <button class="btn btn-secondary" onclick="window.location.href='index.html'">← Back to Home</button>
+        </div>
+
+        <header class="header">
+            <h1>Student Portal</h1>
+            <p class="subtitle">Submit and track your gate pass requests</p>
+        </header>
+
+        <main class="main-content">
+            <!-- Alert Messages -->
+            <div id="alertContainer"></div>
+
+            <!-- Request Form -->
+            <div class="form-container">
+                <h2 style="color: #8f191d; margin-bottom: 25px;">Submit Gate Pass Request</h2>
+                <form id="requestForm">
+                    <div class="form-group">
+                        <label for="studentId">Student ID *</label>
+                        <input type="text" id="studentId" required placeholder="e.g., STU001">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="studentName">Full Name *</label>
+                        <input type="text" id="studentName" required placeholder="Enter your full name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="reason">Reason for Exit *</label>
+                        <textarea id="reason" required placeholder="Describe the reason for leaving campus..."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exitDate">Exit Date *</label>
+                        <input type="date" id="exitDate" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exitTime">Exit Time *</label>
+                        <input type="time" id="exitTime" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="returnDate">Expected Return Date</label>
+                        <input type="date" id="returnDate">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="returnTime">Expected Return Time</label>
+                        <input type="time" id="returnTime">
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-block">Submit Request</button>
+                </form>
+            </div>
+
+            <!-- My Requests Section -->
+            <div style="margin-top: 50px;">
+                <h2 style="color: #8f191d; margin-bottom: 20px; text-align: center;">My Requests</h2>
+                
+                <div style="text-align: center; margin-bottom: 20px;">
+                    <input type="text" id="searchStudentId" placeholder="Enter Student ID" 
+                           style="padding: 10px; border: 2px solid #e0e0e0; border-radius: 8px; width: 250px; font-family: 'Poppins', sans-serif;">
+                    <button onclick="loadStudentRequests()" class="btn btn-secondary" style="margin-left: 10px;">
+                        View My Requests
+                    </button>
+                </div>
+
+                <div id="requestsContainer"></div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>© 2025 Campus Gate Pass System</p>
+        </footer>
+    </div>
+<script src="/frontend/js/student.js"></script>
+</body>
+</html>

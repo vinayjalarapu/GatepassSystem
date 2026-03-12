@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gatekeeper Portal - Gate Pass System</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="back-btn">
+            <button class="btn btn-secondary" onclick="window.location.href='index.html'">← Back to Home</button>
+        </div>
+
+        <header class="header">
+            <h1>Gatekeeper Portal</h1>
+            <p class="subtitle">Verify and scan gate passes</p>
+        </header>
+
+        <main class="main-content">
+            <!-- Alert Messages -->
+            <div id="alertContainer"></div>
+
+            <!-- Verification Form -->
+            <div class="form-container">
+                <h2 style="color: #8f191d; margin-bottom: 25px;">Verify Gate Pass</h2>
+                
+                <div class="form-group">
+                    <label for="passId">Enter Pass ID</label>
+                    <input type="text" id="passId" placeholder="e.g., REQ1729854..." style="font-size: 1.1rem;">
+                </div>
+
+                <button onclick="verifyPass()" class="btn btn-primary btn-block">Verify Pass</button>
+            </div>
+
+            <!-- Verification Result -->
+            <div id="verificationResult"></div>
+        </main>
+
+        <footer class="footer">
+            <p>© 2025 Campus Gate Pass System</p>
+        </footer>
+    </div>
+
+    <script src="js/gatekeeper.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moderator Portal - Gate Pass System</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="back-btn">
+            <button class="btn btn-secondary" onclick="window.location.href='index.html'">← Back to Home</button>
+        </div>
+
+        <header class="header">
+            <h1>Moderator Portal</h1>
+            <p class="subtitle">Review and manage gate pass requests</p>
+        </header>
+
+        <main class="main-content">
+            <!-- Alert Messages -->
+            <div id="alertContainer"></div>
+
+            <!-- Filter Buttons -->
+            <div style="text-align: center; margin-bottom: 30px;">
+                <button class="btn btn-primary" onclick="loadRequests('pending')" style="margin: 5px;">
+                    Pending Requests
+                </button>
+                <button class="btn btn-secondary" onclick="loadRequests('all')" style="margin: 5px;">
+                    All Requests
+                </button>
+                <button class="btn btn-success" onclick="loadRequests('approved')" style="margin: 5px;">
+                    Approved
+                </button>
+                <button class="btn btn-danger" onclick="loadRequests('rejected')" style="margin: 5px;">
+                    Rejected
+                </button>
+            </div>
+
+            <div id="requestsContainer">
+                <div class="loading">Click a button above to load requests</div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>© 2025 Campus Gate Pass System</p>
+        </footer>
+    </div>
+
+    <!-- Modal for Remarks -->
+    <div id="remarksModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 1000; justify-content: center; align-items: center;">
+        <div style="background: white; padding: 30px; border-radius: 15px; max-width: 500px; width: 90%;">
+            <h3 style="color: #8f191d; margin-bottom: 20px;">Add Remarks</h3>
+            <textarea id="remarksInput" style="width: 100%; min-height: 120px; padding: 12px; border: 2px solid #e0e0e0; border-radius: 8px; font-family: 'Poppins', sans-serif; margin-bottom: 20px;" placeholder="Enter your remarks..."></textarea>
+            <div style="display: flex; gap: 10px;">
+                <button class="btn btn-primary" onclick="submitDecision()" style="flex: 1;">Submit</button>
+                <button class="btn btn-secondary" onclick="closeModal()" style="flex: 1;">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/moderator.js"></script>
+</body>
+</html>
